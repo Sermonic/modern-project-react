@@ -41,4 +41,4 @@ const mapDispatchToProps = (dispatch) => ({
   onCreatePressed: (text) => dispatch(createTodo(text)),
 });
 
-export default connect()(NewTodoForm);
+export default connect(mapStateToProps, mapDispatchToProps)(NewTodoForm);
