@@ -1,0 +1,22 @@
+{
+  "name": "modern-project-react-server",
+  "version": "1.0.0",
+  "description": "Basic Server for React Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx babel-node src/server.js"
+  },
+  "author": "Vitaliy Shcherbanych <vitaliyshcherbanych@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2"
+  }
+}
