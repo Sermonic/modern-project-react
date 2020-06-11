@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Basic Server for React Application",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "npx babel-node src/server.js"
+    "start": "npx babel-node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "author": "Vitaliy Shcherbanych <vitaliyshcherbanych@gmail.com>",
   "license": "MIT",
