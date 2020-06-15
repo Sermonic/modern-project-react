@@ -6,6 +6,10 @@ const TodoItemContainer = styled.div`
   margin-top: 8px;
   padding: 16px;
   border-radius: 8px;
+  border-bottom: ${(props) =>
+    new Date(props.createdAt) > new Date(Date.now() - 8640000 * 5)
+      ? "none"
+      : "2px solid red"};
   position: relative;
   box-shadow: 0 4px 8px grey;
 `;
@@ -40,8 +44,12 @@ const RemoveButton = styled.button`
 `;
 
 export const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
-  <TodoItemContainer>
+  <TodoItemContainer createdAt={todo.createdAt}>
     <h3>{todo.text}</h3>
+    <p>
+      Created at:&nbsp;
+      {new Date(todo.createdAt).toLocaleDateString()}
+    </p>
     <ButtonsContainer>
       {todo.isCompleted ? null : (
         <CompletedButton onClick={() => onCompletedPressed(todo.id)}>

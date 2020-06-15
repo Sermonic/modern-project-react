@@ -14,13 +14,13 @@ let fakeTodos = [
     id: "0300c968-73ef-400d-afff-5d736bf4dd6c",
     text: "Find a job",
     isCompleted: false,
-    createdAt: new Date(Date.now() - 8640000 * 7),
+    createdAt: new Date(Date.now() - 86400000 * 7),
   },
   {
     id: "a741e385-05a2-4981-a3c1-b12d33811a1e",
     text: "Buy groceries",
     isCompleted: true,
-    createdAt: new Date(Date.now() - 8640000 * 14),
+    createdAt: new Date(Date.now() - 86400000 * 14),
   },
 ];
 
